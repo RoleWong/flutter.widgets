@@ -4,9 +4,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:scrollable_positioned_list/src/item_positions_notifier.dart';
-import 'package:scrollable_positioned_list/src/positioned_list.dart';
+import 'package:scrollable_positioned_list_for_us/scrollable_positioned_list_for_us.dart';
+import 'package:scrollable_positioned_list_for_us/src/item_positions_notifier.dart';
+import 'package:scrollable_positioned_list_for_us/src/positioned_list.dart';
 
 const screenHeight = 400.0;
 const screenWidth = 400.0;

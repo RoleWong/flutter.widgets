@@ -4,7 +4,7 @@
 
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+import 'package:scrollable_positioned_list_for_us/scrollable_positioned_list_for_us.dart';
 
 const numberOfItems = 5001;
 const minItemHeight = 20.0;

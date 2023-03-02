@@ -1,3 +1,6 @@
+# 0.4.0
+* FIx: PageStorage.of(context) can be null.
+
 # 0.3.5
 * Fix extraneous animation controller declaration in 0.3.4.
 

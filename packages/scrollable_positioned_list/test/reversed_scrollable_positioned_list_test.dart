@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pedantic/pedantic.dart';
-import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+import 'package:scrollable_positioned_list_for_us/scrollable_positioned_list_for_us.dart';
 
 const screenHeight = 400.0;
 const screenWidth = 400.0;

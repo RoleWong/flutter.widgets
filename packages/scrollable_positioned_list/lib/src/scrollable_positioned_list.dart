@@ -275,7 +275,12 @@ class _ScrollablePositionedListState extends State<ScrollablePositionedList>
   @override
   void initState() {
     super.initState();
-    ItemPosition? initialPosition = PageStorage.of(context)!.readState(context);
+    ItemPosition? initialPosition;
+    try{
+      initialPosition = PageStorage.of(context).readState(context);
+    }catch(e){
+      print(e.toString());
+    }
     primary.target = initialPosition?.index ?? widget.initialScrollIndex;
     primary.alignment =
         initialPosition?.itemLeadingEdge ?? widget.initialAlignment;

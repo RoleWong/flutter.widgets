@@ -1,53 +1,7 @@
-# scrollable_positioned_list
 
-A flutter list that allows scrolling to a specific item in the list.
+# 我们对这个包进行了如下修改，仅为了给我们自己业务使用。
 
-Also allows determining what items are currently visible.
+- 修复 PageStorage.of(context) 的空安全问题。
 
-## Usage
+# 外部开发者请使用原作者的包，[scrollable_positioned_list](https://pub.dev/packages/scrollable_positioned_list)，我们也向原作者表示感谢。
 
-A `ScrollablePositionedList` works much like the builder version of `ListView`
-except that the list can be scrolled or jumped to a specific item.
-
-### Example
-
-A `ScrollablePositionedList` can be created with:
-
-```dart
-final ItemScrollController itemScrollController = ItemScrollController();
-final ItemPositionsListener itemPositionsListener = ItemPositionsListener.create();
-
-ScrollablePositionedList.builder(
-  itemCount: 500,
-  itemBuilder: (context, index) => Text('Item $index'),
-  itemScrollController: itemScrollController,
-  itemPositionsListener: itemPositionsListener,
-);
-```
-
-One then can scroll to a particular item with:
-
-```dart
-itemScrollController.scrollTo(
-  index: 150,
-  duration: Duration(seconds: 2),
-  curve: Curves.easeInOutCubic);
-```
-
-or jump to a particular item with:
-
-```dart
-itemScrollController.jumpTo(index: 150);
-```
-
-One can monitor what items are visible on screen with:
-
-```dart
-itemPositionsListener.itemPositions.addListener(() => ...);
-```
-
-A full example can be found in the example folder.
-
---------------------------------------------------------------------------------
-
-This is not an officially supported Google product.
